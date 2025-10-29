@@ -1,0 +1,21 @@
+div#about {
+    position: relative;
+}
+
+div#about h1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    font-weight:var(--font-wt-lighter);
+    font-size: var(--size-xlarge);
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* --------------------------------------------------------- */
+
+section#about-us{
+    max-width: var(--percentage-40);
+    display: flex;
+    flex-direction: column;
+}
