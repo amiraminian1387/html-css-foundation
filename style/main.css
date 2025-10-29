@@ -579,7 +579,7 @@ section#iamges .right {
 
 /*SECTION OFFERS*/
 
-/*SECTION EMPLOYER CARD  */
+/*SECTION DISCOUNT */
 #sectionCard {
     display: flex;
     gap: 64px;
@@ -634,4 +634,87 @@ section#iamges .right {
     max-width: fit-content;
 }
 
-/* SECTION EMPLOYER CARD  */
+/* SECTION DISCOUNT  */
+
+/* SECTION EMPLOYER CARDS INFO*/
+#card-info {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--size-xlarge);
+    padding: var(--size-xlarge);
+    margin-bottom: var(--size-xlarge);
+}
+
+#card-info .card {
+    flex: 0 0 300px;
+    border-radius: var(--global-radius);
+    background-color: var(--bg);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px var(--card-bg);
+    position: relative;
+    transition: box-shadow 0.4s ease;
+}
+
+#card-info .card:hover {
+    box-shadow: 0 0px 16px var(--primary-1);
+}
+
+#card-info .card:nth-child(1):hover,
+#card-info .card:nth-child(3):hover,
+#card-info .card:nth-child(5):hover {
+    box-shadow: 0 0px 16px var(--hover-color);
+}
+
+#card-info .card img {
+    width: var(--percentage);
+    height: var(--percentage);
+    object-fit: cover;
+    transition: opacity 0.4s ease, height 0.4s ease;
+    display: block;
+}
+
+#card-info .card:hover img {
+    opacity: var(--zero);
+    height: var(--zero);
+}
+
+
+#card-info .card__content {
+    position: absolute;
+    top: var(--zero);
+    left: var(--zero);
+    width: var(--percentage);
+    height: var(--percentage);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-large);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background-color: var(--dark-transp-bg);
+}
+
+#card-info .card:hover .card__content {
+    opacity: 1;
+}
+
+#card-info .card__title {
+    font-size: var(--font-xlarge);
+    font-weight: var(--font-wt-lighter);
+    color: var(--white);
+    margin-bottom: var(--size-small);
+}
+
+#card-info .card__description {
+    margin: var(--zero);
+    font-size: 14px;
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: var(--size-large);
+    text-align: center;
+}
+
+/* SECTION EMPLOYER CARDS INFO  */
