@@ -547,3 +547,34 @@ section#iamges .right {
 }
 
 /* SECTION IMAGES  */
+
+/*SECTION OFFERS*/
+#offers {
+    padding: var(--size-xlarge) 5%;
+    background: linear-gradient(135deg, #49005f, #ff08b5);
+    border-radius: var(--global-radius);
+    text-align: center;
+    transition: 0.9s ease;
+
+}
+
+#offers:hover {
+    transform: translateY(-8px);
+}
+
+#offers h1 {
+    font-size: var(--size-large);
+    font-weight: var(--font-wt-bold);
+    color: var(--white);
+    margin-bottom: var(--size-small);
+}
+
+#offers p {
+    font-size: var(--size-medium);
+    color: var(--primary-2) !important;
+    line-height: var(--size-large);
+    max-width: 800px;
+
+}
+
+/*SECTION OFFERS*/
