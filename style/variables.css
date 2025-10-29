@@ -36,8 +36,9 @@
 
     /* font family*/
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-main: Arial, Helvetica, sans-serif;
+    --font-main: Arial;
     --font-secendry: sans-serif;
+    --font-form:Helvetica;
     /* font family */
 
     /* size  */
