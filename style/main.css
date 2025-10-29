@@ -431,3 +431,119 @@ section#Certifications .card-body p {
 }
 
 /*  SECTION CERTIFICATION  */
+
+/* SECTION IMAGES */
+section#iamges {
+    font-family: var(--font-primary);
+}
+
+section#iamges div.container {
+    display: flex;
+    gap: var(--size-small);
+    width: 94%;
+}
+
+/* LEFT  */
+section#iamges .left h1 {
+    margin: 0;
+
+}
+
+section#iamges .left {
+    display: flex;
+    flex-direction: column;
+}
+
+section#iamges .left .pic {
+    flex: 1;
+}
+
+section#iamges .left .caption {
+
+    position: static;
+    text-align: left;
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 5px 5px 5px purple;
+    cursor: pointer;
+}
+
+section#iamges div.caption h1,
+section#iamges p {
+    margin: var(--zero);
+}
+
+section#iamges .left,
+section#iamges .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-small);
+}
+
+/* RIGHT  */
+.right .pic:first-child {
+    flex: 0.4;
+}
+
+.right .pic:last-child {
+    flex: 0.6;
+
+}
+
+.right h1 {
+    background: var(--text-color-gt-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right p {
+    color: var(--gray-1);
+    letter-spacing: var(--size-small);
+    font-weight: var(--font-wt-bolder);
+}
+
+.pic {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--global-radius);
+    cursor: pointer;
+    transition: 0.9s ease-in-out;
+}
+
+.pic img {
+    width: var(--percentage);
+    height: var(--percentage);
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.pic .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.right .pic:hover img {
+    transform: scale(1.05);
+    opacity: .2;
+}
+
+.left .pic:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.4);
+
+}
+
+.pic:hover .caption {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+/* SECTION IMAGES  */
