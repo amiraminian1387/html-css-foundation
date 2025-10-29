@@ -720,25 +720,6 @@ section#iamges .right {
 /* SECTION EMPLOYER CARDS INFO  */
 
 /*SECTION BG IMAGE */
-.hover-message {
-    position: absolute;
-    top: 0px;
-    left: 9%;
-    background: var(--box-color-gt);
-    color: var(--white);
-    font-size: var(--size-medium);
-    font-family: var(--font-primary);
-    padding: 6px 12px;
-    border-radius: var(--small-radius);
-    box-shadow: 0 0 10px var(--primary-1);
-    opacity: 1;
-    transition: opacity 0.4s ease;
-    z-index: 10;
-}
-
-#bg-image:hover .hover-message {
-    opacity: 0;
-}
 
 #bg-image {
     position: relative;
@@ -774,7 +755,38 @@ section#iamges .right {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+#bg-image .box::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 40px; 
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(138, 43, 226, 0.3) 45%,
+        rgba(255, 255, 255, 0.6) 50%,
+        rgba(138, 43, 226, 0.3) 55%,
+        transparent 100%
+    );
+    top: 0;
+    left: -15%;
+    animation: skeleton 2.5s infinite ease-in-out;
+}
+
+@keyframes skeleton {
+    0% {
+        left: -15%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 115%;
+    }
+}
+
 
 #bg-image .box>div {
     text-align: center;
