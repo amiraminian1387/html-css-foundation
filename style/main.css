@@ -718,3 +718,178 @@ section#iamges .right {
 }
 
 /* SECTION EMPLOYER CARDS INFO  */
+
+/*SECTION BG IMAGE */
+.hover-message {
+    position: absolute;
+    top: 0px;
+    left: 9%;
+    background: var(--box-color-gt);
+    color: var(--white);
+    font-size: var(--size-medium);
+    font-family: var(--font-primary);
+    padding: 6px 12px;
+    border-radius: var(--small-radius);
+    box-shadow: 0 0 10px var(--primary-1);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 10;
+}
+
+#bg-image:hover .hover-message {
+    opacity: 0;
+}
+
+#bg-image {
+    position: relative;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center 41%;
+    height: 1000px;
+    width: var(--percentage);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--zero);
+}
+
+#bg-image .container-bg-image {
+    width: 82%;
+    height: var(--percentage);
+    border-radius: var(--global-radius);
+
+}
+
+#bg-image .box {
+    opacity: 1;
+    width: var(--percentage);
+    height: var(--percentage);
+    background: var(--box-color-gt);
+    color: var(--white);
+    border: 1px solid var(--bg-img-shadow);
+    border-radius: var(--medium-radius);
+    box-shadow: 0 0px var(--size-xlarge) var(--bg-img-shadow);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-image .box>div {
+    text-align: center;
+    max-width: 800px;
+    padding: 0 var(--size-medium);
+}
+
+#bg-image .box h1 {
+    font-size: var(--size-xlarge);
+    font-weight: var(--font-wt-lighter);
+    gap: var(--size-small);
+    margin-bottom: var(--size-xlarge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#bg-image .box h1::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-4);
+    transition: width 0.4s ease;
+}
+
+#bg-image .box h1:hover::after {
+    width: var(--half-percentage);
+}
+
+#bg-image .logo-small {
+    width: var(--size-xlarge);
+    height: auto;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+
+#bg-image .box h2 {
+    font-size: var(--size-large);
+    font-weight: var(--font-wt-bolder);
+    line-height: var(--size-large);
+    margin-bottom: var(--size-large);
+}
+
+#bg-image .box p {
+    font-size: var(--size-medium);
+    margin-top: var(--size-large);
+    font-weight: var(--font-wt-light);
+}
+
+#bg-image .box ul {
+    list-style: none;
+    padding: var(--zero);
+    margin-top: var(--size-xlarge);
+    font-size: var(--size-medium);
+}
+
+#bg-image .box ul li {
+    position: relative;
+    padding-left: var(--size-medium);
+    margin-bottom: var(--size-small);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#bg-image .box ul li::before {
+    content: "✦";
+    /*^^^^^ از استیکر های خود لپتاپ هست  */
+    position: absolute;
+    left: var(--zero);
+    color: var(--white);
+    font-size: var(--size-medium);
+}
+
+#bg-image .box ul li:hover {
+    transform: translateX(6px);
+    color: var(--white);
+}
+
+#bg-image .cta-btn {
+    margin-top: var(--size-xlarge);
+    border: 1px solid var(--gray-4);
+    background: var(--primary-1);
+    color: var(--white);
+    border-radius: var(--global-radius);
+    padding: var(--size-small) var(--size-medium);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-image .cta-btn::before {
+    content: "";
+    position: absolute;
+    top: var(--zero);
+    left: -100%;
+    width: var(--percentage);
+    height: var(--percentage);
+    background: var(--gray-4);
+    transition: left 0.4s ease;
+}
+
+#bg-image .cta-btn:hover::before {
+    left: var(--zero);
+}
+
+#bg-image .cta-btn:hover {
+    background: var(--white);
+    color: var(--bg);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px var(--gray-4);
+}
+
+/*SECTION BG IMAGE  */
