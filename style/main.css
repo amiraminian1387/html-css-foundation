@@ -389,5 +389,10 @@ section#cards-intro div#Marketing button {
     padding: 15px 0;
     border-radius: 10px;
 }
-
+section#cards-intro i.webDesign{
+    color:var(--i-webdesign)
+}
+section#cards-intro i.SEO{
+color: var( --i-color-seo);
+}
 /* SECTION CARDS INTRO */

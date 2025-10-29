@@ -28,6 +28,9 @@
     --primary-1: #ab00b1;
     --hover-color: #ff007f;
     --input-color: #5f0043;
+    --i-webdesign: #ff0080;
+    --i-color-seo: #830078;
+    --warnings: #ff0000;
     --white: white;
     /* colors  */
 
@@ -38,7 +41,7 @@
     /* font family */
 
     /* size  */
-     --large-radius: 18px;
+    --large-radius: 18px;
     --global-radius: 12px;
     --small-radius: 6px;
     --medium-radius: 8px;
