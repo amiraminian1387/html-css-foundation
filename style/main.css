@@ -893,3 +893,83 @@ section#iamges .right {
 }
 
 /*SECTION BG IMAGE  */
+
+/* SECTION SERVICES  */
+#Services {
+    background: var(--bg);
+    font-family: var(--font-primary);
+    padding: var(--size-large) 0;
+}
+
+#Services h3 {
+    font-size: var(--size-medium);
+    font-weight: var(--font-wt-bold);
+    color: var(--primary-1);
+    letter-spacing: 6px;
+}
+
+#Services h1 {
+    font-size: var(--size-xlarge);
+    font-weight: var(--font-wt-bolder);
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--size-medium);
+}
+
+#Services p {
+    font-size: var(--size-medium);
+    color: var(--gray-4);
+    line-height: var(--size-large);
+}
+
+#Services img {
+    display: inline;
+    width: 64px;
+    height: 64px;
+}
+
+#Services .details {
+    display: inline-block;
+    margin-top: var(--size-medium);
+    font-weight: var(--font-wt-bold);
+    color: var(--hover-color);
+    text-decoration: none;
+    position: relative;
+}
+
+#Services .details::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--hover-bg-gt);
+    transition: width 0.3s ease;
+}
+
+#Services .details:hover::after {
+    width: var(--percentage);
+}
+
+#Services .right i {
+    font-size: var(--size-medium);
+    color: var(--primary-6);
+    margin-bottom: var(--size-small);
+    display: inline-block;
+}
+
+#Services .right h2 {
+    font-size: var(--main-size);
+    font-weight: var(--font-wt-bold);
+    color: var(--white);
+    margin-bottom: var(--size-small);
+}
+
+.right p {
+    font-size: var(--size-small);
+    color: var(--mid-gray-text);
+    line-height: 1.6;
+}
+/* SECTION SERVICES  */
