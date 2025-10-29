@@ -1192,5 +1192,23 @@ section#iamges .right {
     color: var(--mid-gray-text);
     line-height: var(--size-large);
 }
+
  /* SECTION FAG  */
+
+ /* corener note  */
+.corner-note {
+    position: fixed;
+    bottom: var(--size-medium);
+    left: var(--size-medium);
+    background: var(--hover-bg-gt);
+    color: var(--gray-1);
+    padding: 10px 16px;
+    border-radius: var(--small-radius);
+    font-size: var(--size-medium);
+    font-weight: var(--font-wt-lighter);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* corener note  */
 /* end (: */
