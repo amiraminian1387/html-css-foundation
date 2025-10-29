@@ -1,0 +1,31 @@
+:root {
+
+    /* colors  */
+    --primary-color: #ffffff;
+    --color-secondary: #555;
+    --main-color-bg: rgb(238, 238, 238);
+    --color-bg-gradient: linear-gradient(white, rgb(219, 219, 219));
+    --color-bg-btn: rgb(255, 251, 251);
+    --main-color: black;
+    --color-text: #333;
+    /* colors  */
+
+    /* font */
+    --font-main: 'Helvetica Neue', sans-serif;
+    --font-body-family: Jost, sans-serif;
+    /* font  */
+
+    /* size  */
+    --gap-spacing: 45px;
+    --font-wt-lighter: 100;
+    --font-wt-bold: bold;
+    --font-wt-bolder: bolder;
+    --main-font-sz: 14px;
+    --font-large: 18px;
+    --font-xlarge: x-large;
+    --font-size-large: 18px;
+    --zero: 0;
+    --percentage:100%;
+    /* size  */
+
+}

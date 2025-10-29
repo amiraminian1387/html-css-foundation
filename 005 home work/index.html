@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>ADIDAS HOME PAGE</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* head */
+        #header {
+
+            background-color: #515151;
+            color: rgb(217, 217, 217);
+            height: 60px;
+        }
+
+        #nav {
+            width: 79%;
+            text-align: right;
+            display: inline;
+            vertical-align: middle;
+            margin-left: 37%;
+            font-size: 18px;
+        }
+
+        #logo {
+            width: 20%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #img {
+            width: 90px;
+            height: 60px;
+            padding-left: 50%;
+        }
+
+        .buttonTop {
+            background-color: #515151;
+            color: inherit;
+            border: 1px solid white;
+            padding: 8px 22px;
+            font-size: 17px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+            padding: 15px;
+        }
+
+        /* all hovers  */
+        a:hover,
+        #a-men:hover,
+        #a-women:hover {
+            background-color: white;
+            color: black;
+            border: black;
+
+
+
+
+        }
+
+        .button:hover,
+        .buttonTop:hover {
+            background-color: white;
+            color: black;
+            border: 2px groove black;
+            font-size: larger;
+
+        }
+
+        /* end all hovers  */
+
+        /* end heading  */
+
+
+        /* start body  */
+
+        /* men  */
+        #containerImage1 {
+            background-image: url(./addidas/images/backs/slideshow.webp);
+            background-repeat: no-repeat;
+            height: 450px;
+            background-size: 124% 100%;
+            /* توی عکس  که دارم میبینم عکس درست نیوفتاده محتواش و نصف کفش ادیدادس نیست اصلا
+              در حالی من فقط وقتی 100 درصد خالی زدم کل عکس و محتوا داره دیده میشه و جلوه بهتری داره فقط متن خیلی وسط نیست که اونم الان یکم عکسو بردم راست تر
+             background-size: 135% 100%; 
+               /: این اندازه نمونه اصلی شبیه عکس که بهم دادن هست کفش نصفه نیمه     */
+
+        }
+
+        .div-body {
+            text-align: left;
+            color: black;
+            padding-left: 5%;
+            padding-top: 130px;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 8px 20px;
+            font-size: 17px;
+        }
+
+        /* men  */
+        .h1Title {
+            border-bottom: 1px solid black;
+            display: inline-block;
+            margin-left: 39%;
+            padding: 20px 100px 2px 100px;
+
+
+        }
+
+        /* women  */
+        .h1Title2 {
+            margin-top: -1%;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            margin-left: 37%;
+            padding: 0px 100px 2px 103px;
+
+        }
+
+        /* cards */
+
+         /* div.Container  می دونم خیلی جاها لازم نبود این شکلی 
+         بنویسم حتی برای پایینی ها ولی چون تازه یادگرقتم میخواستم امتحان کنم */
+       
+        div.Container {
+            margin: 0 auto;
+            width: 82%;
+            vertical-align: top;
+          
+
+        }
+
+        div.card {
+            width: 20%;
+            margin: 2%;
+            height: 200px;
+            border: 1px groove white;
+            display: inline-block;
+            vertical-align: bottom;
+           
+
+        }
+
+        div.card>div.card_body {
+            padding-left: 6%;
+            vertical-align: top;
+
+        }
+
+        img.cardImages {
+            width: 100%;
+            height: 175px;
+
+
+        }
+
+        p:first-of-type {
+            text-decoration: line-through;
+            display: inline;
+            padding-left: 0%;
+            color: red;
+            font-size: 17px
+        }
+
+        p:nth-of-type(2) {
+            display: inline;
+            padding-left: 2%;
+            font-size: 17px;
+        }
+
+
+        /* men  */
+        #a-men {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            margin: 112px 0% 4% 43.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+/* این دوتا بجای کلاس از ایدی استفاده کردم چون بالایی نیاز به مارجین منفی نداشت  */
+        /* women  */
+        #a-women {
+            background-color: black;
+            color: white;
+            font-size: 14px;
+            margin: 100px 0% -5% 43%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* women  */
+        #containerImage2 {
+
+            background-image: url(./addidas/images/backs/woman-slide.webp );
+            background-repeat: no-repeat;
+            height: 450px;
+            background-size: 120% 90%;
+        }
+
+        /* end card  */
+
+        /* footer / ending  */
+
+        footer {
+            /* چرا فوتر به انتهای صفحه نمیرسه؟*/
+            background-color: black;
+            margin-bottom: -10px;
+            padding-bottom: 0;
+            background-image: url(./addidas/images/logo.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 25% 60%;
+        }
+
+        table {
+            width: 60%;
+            margin: 40px 0 40px 10%;
+            text-align: left;
+            color: white;
+            border-collapse: separate;
+
+        }
+
+        td,
+        th {
+            padding: 6px 17px;
+        }
+
+        th {
+            padding-bottom: 17px;
+        }
+
+        div.card:hover {
+            box-shadow: 0 0 18px 2px #ffd700;
+            transform: translateY(-6px) scale(1.03);
+
+            border-color: #ffd700;
+        }
+
+        /* end footer / ending  */
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img id="img" src="./addidas/images/logo.png" alt="addidas">
+        </div>
+        <div id="nav">
+            <a href="https://www.adidas.com/us/men-shoes"> men
+            </a>
+            <a href="https://www.adidas.com/us/women-shoes"> woman
+            </a>
+            <a href="https://www.adidas.com/us/children"> kid
+            </a>
+            <a href="https://www.adidas.com/us"> sport
+            </a>
+            <a href="https://www.adidas.com/us"> <button class="buttonTop"> shop now </button>
+            </a>
+        </div>
+    </div>
+    <!-- header  -->
+
+    </div>
+
+    <!-- center image -->
+    <div id="containerImage1">
+
+        <div class="div-body">
+            <h1> Best Sellers </h1>
+            <h2> Find the best sellers in the world!</h2>
+            <button class="button">SHOP MEN</button>
+        </div>
+
+    </div>
+    <!-- center image  -->
+
+    <h1 class="h1Title"> MEN </h1>
+
+    <!-- start container Men -->
+    <div class="Container">
+
+        <!-- card men 1 -->
+
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/men/model1.jpg" alt="shoe for men">
+
+            <div class="card_body">
+                <h1>Model 1</h1>
+                <p> price: 350$ </p>
+                <p> price : 300$</p>
+            </div>
+
+        </div>
+        <!-- card men 1 -->
+
+        <!-- card men 2 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/men/model2.jpg" alt="shoe for men">
+
+            <div class="card_body">
+                <h1> Model 2</h1>
+                <p>Price :400</p>
+                <p> Price :350</p>
+            </div>
+
+        </div>
+        <!-- card men 2 -->
+
+        <!-- card men 3 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/men/model3.jpg" alt="shoe for men">
+
+            <div class="card_body">
+                <h1> Model 3</h1>
+                <p> Price : 500$</p>
+                <p> Price : 450$</p>
+            </div>
+
+        </div>
+        <!-- card men 3 -->
+
+        <!-- card men 4 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/men/model4.jpg" alt="shoe for men">
+
+            <div class="card_body">
+                <h1> Model 4</h1>
+                <p> Price : 550$</p>
+                <p> Price : 500$</p>
+            </div>
+
+        </div>
+        <!-- card men  4  -->
+    </div>
+
+    <!-- end container Men -->
+
+    <a id="a-men" href="https://www.adidas.com/us/men-shoes">See All Men Shoe</a>
+
+    <!-- end card men  -->
+
+    <!-- center image 2 -->
+    <div id="containerImage2">
+
+        <div class="div-body">
+            <h1> Best Sellers </h1>
+            <h2> Find the best sellers in the world!</h2>
+            <button class="button">SHOP WOMEN</button>
+            <!-- توی نصویر انگار به اشتباه زده shop men
+             در صورتی که از اینجا به بعد زنانه است -->
+        </div>
+
+
+    </div>
+    <!-- center image 2 -->
+
+    <h1 class="h1Title2"> WOMEN </h1>
+
+    <!-- satrt container woman -->
+    <div class="Container">
+
+        <!-- card women 1 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/women/model1.jpg" alt="shoe for women">
+
+            <div class="card_body">
+                <h1>Model 1</h1>
+                <p> price: 350$ </p>
+                <p> price : 300$</p>
+            </div>
+
+        </div>
+        <!-- card women 1 -->
+
+        <!-- card women 2 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/women/model2.jpg" alt="shoe for women">
+
+            <div class="card_body">
+                <h1> Model 2</h1>
+                <p>Price :400</p>
+                <p> Price :350</p>
+            </div>
+
+        </div>
+        <!-- card women 2 -->
+
+        <!-- card women 3 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/women/model3.jpg" alt="shoe for women">
+
+            <div class="card_body">
+                <h1> Model 3</h1>
+                <p> Price : 500$</p>
+                <p> Price : 450$</p>
+            </div>
+
+        </div>
+        <!-- card women 3 -->
+
+        <!-- card women 4 -->
+        <div class="card">
+            <img class="cardImages" src="./addidas/images/women/model4.jpg" alt="shoe for women">
+
+            <div class="card_body">
+                <h1> Model 4</h1>
+                <p> Price : 550$</p>
+                <p> Price : 500$</p>
+            </div>
+
+        </div>
+        <!-- card women  4  -->
+    </div>
+
+    <!-- end container Women -->
+    <a id="a-women" href="https://www.adidas.com/us/women-shoes">See All Women Shoe</a>
+
+    <!-- ending part -->
+    <footer>
+        <table>
+            <tr>
+                <th> short cuts </th>
+                <th> company info </th>
+                <th> our customers </th>
+            </tr>
+            <tr>
+                <td>home </td>
+                <td>about us</td>
+                <td>printer1</td>
+            </tr>
+            <tr>
+                <td>men</td>
+                <td>contact us</td>
+                <td>printer2</td>
+            </tr>
+            <tr>
+                <td>women</td>
+                <td>press</td>
+                <td>printer3</td>
+            </tr>
+            <tr>
+                <td>kids</td>
+                <td>CEO</td>
+                <td>printer4</td>
+            </tr>
+            <tr>
+                <td>sport</td>
+                <td>managers</td>
+                <td>printer5</td>
+            </tr>
+        </table>
+    </footer>
+    <!-- end ending part -->
+
+</body>
+
+</html>

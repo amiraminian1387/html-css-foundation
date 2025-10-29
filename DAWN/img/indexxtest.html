@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارد بازی</title>
+  <style>
+    body {
+      background: #121212;
+      font-family: Tahoma, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .match-card {
+      width: 400px;
+      background: #1e1e1e;
+      color: #fff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .teams {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .teams img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #333;
+    }
+
+    .info {
+      flex: 1;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+
+    .time-box {
+      background: #ff007f;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .time-box .live {
+      font-size: 12px;
+      display: block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="match-card">
+    <div class="teams">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Burnley_FC_badge.png" alt="Burnley">
+      <span>–</span>
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="ManUtd">
+    </div>
+    <div class="info">
+      فوتبال منچستریونایتد – برنلی <br>
+      <small>(گزارش: رضا محمدعلی)</small>
+    </div>
+    <div class="time-box">
+      17:25
+      <span class="live">● زنده</span>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+:root {
+    /* colors  */
+    --bg-primary: rgb(2, 26, 43);
+    --bg-secendry: rgb(14, 39, 58);
+    --color-primary: rgb(15, 149, 144);
+    --color-secendry: rgb(158, 158, 158);
+    /* colors  */
+
+    /* font family*/
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-secendry: sans-serif;
+    /* font family */
+
+    /* size  */
+    --size-xxlarge: 6rem;
+    --size-unnormal: 14rem;
+    --size-large: 2rem;
+    --size-medium: 1rem;
+    --size-small: 0.5rem;
+    --font-wt-lighter: 100;
+    --font-wt-light: 300;
+    --small-font-sz: 12px;
+    --medium-font-sz: 15;
+    --font-xlarge: x-large;
+
+
+}

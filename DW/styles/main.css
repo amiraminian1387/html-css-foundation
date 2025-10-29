@@ -1,0 +1,265 @@
+/* AW25 Collection banner  */
+@media screen and (min-width: 501px) {
+
+    /* display none  */
+    section.watches-mobile,
+    .banner-text-mobile,
+    section#slider-mobile {
+        display: none;
+    }
+
+    /* display none  */
+
+    /* start section banner desktop  */
+    section#banner {
+        position: relative;
+        width: 100%;
+        height: 760px;
+        background-image: url("../images/DW-logo.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        padding-left: 8%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        background-color: #000000;
+        color: var(--primary-color);
+        width: 15em;
+        height: 3.9em;
+        text-align: right;
+        transition: all 0.6s ease;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+
+    }
+
+    .button:hover {
+        background-color: var(--color-bg-btn);
+        font-size: var(--main-font-sz);
+        cursor: pointer;
+        font-weight: var(--font-wt-bold);
+        margin-left: 10px;
+        border-radius: 6px;
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.8);
+    }
+
+    .button svg {
+        width: 30px;
+        margin: -0.2px 1px 1px;
+        position: absolute;
+        display: flex;
+        top: 430px;
+        transition: all 0.6s ease;
+    }
+
+    .text:hover,
+    .button:hover svg {
+        transform: translateX(5px);
+        color: var(--main-color);
+    }
+
+    .text {
+        font-size: var(--main-font-sz);
+        font-weight: var(--font-wt-bold);
+        color: var(--primary-color);
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    div.banner-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        vertical-align: middle;
+        text-align: center;
+
+    }
+
+    div.banner-text p {
+        margin-top: var(--zero);
+        font-size: var(--font-large);
+        font-weight: var(--font-wt-bold);
+
+    }
+
+    div.banner-text h2 {
+        letter-spacing: 1.5px;
+        font-size: var(--font-xlarge);
+        font-weight: var(--font-wt-bolder);
+    }
+
+    /* end section banner desktop */
+
+
+    /* --watch cards desktop -- */
+    section.watches {
+        width: var(--percentage);
+        display: flex;
+        gap: 16px;
+        padding: 0 3%;
+    }
+
+    section.watches>div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+    }
+
+
+    .img-container {
+        position: relative;
+        width: var(--percentage);
+        height: var(--percentage);
+        overflow: hidden;
+    }
+
+
+    .img-container img {
+        width: var(--percentage);
+        height: var(--percentage);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        object-fit: cover;
+        display: block;
+    }
+
+    .img-container:hover img {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+       
+        
+    }
+
+    .body-container {
+        height: 60px;
+        background: #F0F0F0;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-main, sans-serif);
+        font-size: 1rem;
+        font-weight: var(--font-wt-bold);
+        letter-spacing: 1px;
+    }
+
+    div.overlay-text h1 {
+        font-size: var(--font-main);
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--main-color);
+        background-color: rgba(255, 255, 255, 0.4);
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-align: center;
+        font-family: var(--font-main, sans-serif);
+    }
+
+    .button2 {
+        background-color: var(--main-color);
+        color: var(--primary-color);
+        width: 15em;
+        height: 3.9em;
+        text-align: right;
+        transition: all 0.6s ease;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+
+
+    }
+
+    .button2:hover {
+        background-color: var(--color-bg-btn);
+        font-size: var(--main-font-sz);
+        cursor: pointer;
+        font-weight: var(--font-wt-bold);
+        border-radius: 6px;
+        box-shadow: 0 12px 12px rgba(0, 0, 0, 0.8);
+    }
+
+    .text2:hover,
+    .button2:hover svg {
+        transform: translateX(5px);
+        color: var(--main-color);
+    }
+
+    .text2 {
+        font-size: var(--main-font-sz);
+        font-weight: var(--font-wt-bold);
+        color: var(--primary-color);
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    /* -- end watch cards desktop -- */
+
+    /*start section card desktop  */
+    #sectionCard {
+        display: flex;
+        gap: 64px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        margin-top: 2%;
+
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+    }
+
+    .card img {
+        transition: transform 0.4s ease;
+    }
+
+    .card:hover img {
+        transform: scale(1.08);
+    }
+
+    figure {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    figure img {
+        width: 260px;
+    }
+
+    figcaption {
+        font-weight: var(--font-wt-lighter);
+        font-size: 10px;
+    }
+
+    figcaption h1 {
+        font-size: var(--main-font-sz);
+        font-weight: var(--font-wt-lighter);
+        color: var(--main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+    }
+
+    /* end cart  */
+}

@@ -1,0 +1,158 @@
+@media screen and (max-width: 500px) {
+
+    /* display none */
+
+    figure.card,
+    figcaption,
+    .banner-text,
+    section.watches {
+        display: none;
+
+    }
+
+    /* display none  */
+
+    /* start banner mobile  */
+    div.banner-mobile {
+        background-image: url(../images/DW-logo.webp);
+        background-size: cover;
+        background-position: center;
+        width: var(--percentage);
+        height: 375px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    div.banner-text-mobile {
+        width: var(--percentage);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    div.banner-text-mobile h2 {
+        letter-spacing: 1.5px;
+        font-size: var(--font-larger);
+        font-weight: var(--font-wt-lighter);
+    }
+
+    div.banner-text-mobile p {
+        margin-top: var(--zero);
+        font-size: var(--font-large);
+
+    }
+
+    button.button-mobile {
+        color: var(--primary-color);
+        background-color: var(--main-color);
+        font-weight: var(--font-wt-lighter);
+        font-size: 16px;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        border: var(--main-color) 1px solid;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+/* اینو جی پی تی برای ux/ui بهتر پیشنهاد داد */
+    .button-mobile:active {
+        transform: scale(0.98);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* end banner mobile  */
+
+    /* --watch cards mobile -- */
+    section.watches-mobile {
+        flex-direction: column;
+        height: auto;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    section.watches-mobile>div {
+        margin-bottom: 10px;
+    }
+
+    .img-container-mobile {
+        height: var(--percentage);
+    }
+
+    .img-container-mobile img {
+         box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.9);
+         border-radius: 10px;
+        object-fit: cover;
+        height: var(--percentage);
+        width: var(--percentage);
+        transition: transform 0.4s ease;
+    }
+
+    .img-container-mobile:hover img {
+        transform: scale(1.05);
+    }
+
+    .overlay-text-mobile {
+        font-size: 1.2rem;
+        padding: 6px 12px;
+        background-color: var(--color-secondary);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* --watch cards mobile -- */
+    /*start section card  */
+    #slider-mobile {
+        padding: var(--zero);
+        width: var(--percentage);
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .slider-track {
+        display: flex;
+        gap: 16px;
+    }
+
+    .slide {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background: var(--primary-color);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        position: relative;
+    }
+
+    .slide:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    }
+
+    .slide img {
+        width: var(--percentage);
+        height: var(--percentage);
+        object-fit: cover;
+        display: block;
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+
+
+
+
+
+
+
+    /* end cart  */
+}

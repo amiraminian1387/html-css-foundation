@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .content-wrapper {
+  
+  gap: var( --size-small !important);
+
+}
+
+  .content-wrapper .left,
+  .content-wrapper .right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper img {
+    max-width: 80%;
+  }
+  /* section product  */
+   #product {
+    text-align: center;
+  }
+
+  #product img {
+    margin: 0 auto;
+  }
+}

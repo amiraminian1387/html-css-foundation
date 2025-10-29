@@ -1,0 +1,23 @@
+header {
+    background-color: var(--bg-primary);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header li {
+    padding: var(--size-small);
+}
+
+nav.navbar {
+    padding: 0 var(--size-large);
+}
+
+div#navbarNav {
+    justify-content: flex-end;
+}
+
+a.navbar-brand img {
+    width: 180px;
+    height: 70px;
+}

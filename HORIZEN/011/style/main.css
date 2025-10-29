@@ -1,0 +1,159 @@
+/* start section home-header   */
+section#home-header {
+  padding: var(--size-large) 0;
+  background-color: var(--bg-primary);
+
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: var(--size-unnormal);
+
+}
+
+section#home-header h2 {
+  padding-bottom: var(--size-large);
+  color: var(--color-primary);
+  font-size: small;
+}
+
+section#home-header p {
+  padding: var(--size-large) 0;
+}
+
+a.hvr-underline-from-right {
+  margin: 0 var(--size-xxlarge);
+  font-size: var(--small-font-sz);
+  font-weight: var(--font-wt-lighter);
+  color: var(--color-primary);
+}
+
+/* end section home-header   */
+
+/* section  */
+
+/* left  */
+
+section#Services {
+  background-color: var(--bg-secendry);
+}
+
+h3.mb-3 {
+  font-size: var(--small-font-sz);
+  color: var(--color-primary);
+}
+
+div.left h1 {
+  font-size: var(--size-medium);
+}
+
+div.left p {
+  font-weight: var(--font-wt-lighter);
+  line-height: var(--size-large);
+}
+
+/* left  */
+
+/* right */
+.right i {
+  color: var(--color-primary);
+  padding: var(--size-medium);
+}
+
+div.right h2 {
+  font-size: var(--medium-font-sz);
+  font-weight: var(--font-wt-light);
+
+}
+
+div.right p {
+  font-weight: var(--font-wt-lighter);
+  color: var(--color-secendry);
+}
+
+/* right  */
+
+/* section  */
+
+/* section  Careers  */
+section.Careers {
+  background-color: var(--bg-primary) !important;
+
+}
+
+.Careers h1 {
+  margin-left: var(--size-large);
+}
+
+.Careers h3 {
+  margin-left: var(--size-large);
+}
+
+.Careers h2 {
+  font-size: var(--size-large);
+
+}
+
+.Careers p.text-uppercase {
+  margin-left: var(--size-large);
+  
+  color: var(--color-primary) !important;
+  font-family: var(--font-secendry) !important;
+}
+
+/* section  Careers  */
+
+/* section product  */
+section#product {
+  background-color: var(--bg-secendry) !important;
+}
+
+h3.text-uppercase {
+  color: var(--color-secendry);
+  font-size: var(--small-font-sz);
+}
+
+h1.display-5 {
+  font-size: var(--font-xlarge);
+  font-weight: var(--font-wt-lighter) !important;
+}
+
+div.w-100 h5 {
+  color: var(--color-primary);
+}
+
+p.lead {
+  font-size: var(--size-medium);
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--font-secendry);
+}
+
+/* section product  */
+
+/* section press-awards */
+section#press-awards {
+  background-color: var(--bg-primary);
+}
+
+section#press-awards h3 {
+  color: var(--color-primary);
+
+}
+
+div.press-awards {
+  background-color: var(--bg-secendry) !important;
+}
+
+/* section press-awards */
+/* overview-section  */
+section#overview-section {
+  background-color: var(--bg-secendry) !important;
+}
+
+.card-body {
+  background-color: var(--bg-secendry) !important;
+}

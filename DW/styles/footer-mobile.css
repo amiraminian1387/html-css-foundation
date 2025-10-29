@@ -1,0 +1,90 @@
+@media screen and (max-width: 500px) {
+
+  details {
+    padding: 20px;
+    border-top: 1px solid var(--color-text);
+  }
+
+  div.footer-desktop {
+    display: none;
+  }
+
+  .footer-accordion {
+    padding: 20px;
+    background-color: var(--main-color-bg);
+    font-family: var(--font-main);
+    color: var(--color-text);
+  }
+
+  .footer-accordion {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 1;
+  }
+
+  .footer-accordion details {
+    border-bottom: 1px solid var(--color-border);
+    padding: 12px 0;
+  }
+
+  .footer-accordion summary {
+    font-size: var(--font-large);
+    font-weight: var(--font-wt-bold);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+
+  .footer-accordion summary:hover {
+    color: var(--color-accent);
+  }
+
+  .footer-accordion ul {
+    margin: 10px 0 0 0;
+    padding-left: 16px;
+    list-style: none;
+
+  }
+
+  .footer-accordion li {
+    margin-bottom: 8px;
+  }
+
+  .footer-accordion a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    color: var(--color-text);
+    font-size: var(--main-font-sz);
+
+  }
+
+  .footer-accordion a:hover {
+    color: var(--color-accent);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

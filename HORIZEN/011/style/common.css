@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: white !important;
+}
+
+img,
+button {
+    cursor: pointer;
+}
+
+body {
+    margin:0;
+    padding:0;
+overflow-x: hidden;
+font-family: var(--font-primary);
+   
+}

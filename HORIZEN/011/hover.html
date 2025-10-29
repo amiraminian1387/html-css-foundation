@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making hvr underline from center </title>
+    <style>
+      .center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+      }
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.btn-underline {
+  position: relative;
+  display: inline-block;
+  color: #2098D1;
+  text-decoration: none;
+  padding-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.btn-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #2098D1;
+  transition: all 0.6s ease;
+  transform: translateX(-50%);
+}
+
+.btn-underline:hover::after {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+<div class="center-wrapper">
+  <a href="#" class="btn-underline">  LOG IN</a>
+</div>
+</body>
+
+</html>
