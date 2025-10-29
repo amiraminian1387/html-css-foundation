@@ -1,0 +1,90 @@
+@media screen and (max-width: 570px) {
+
+    .hover-message,
+    section#adverties,
+    section#gallery,
+    section#card-info,
+    .adverties {
+        display: none;
+    }
+
+    .mobile-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:var(--percentage-90);
+        margin: 3% auto;
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        border-radius: var(--large-radius);
+        font-family: 'Segoe UI', sans-serif;
+        
+    }
+
+    .mobile-hero video {
+        width: var(--percentage);
+        height: var(--percentage);
+        object-fit: cover;
+        filter: brightness(0.6);
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: var(--half-percentage);
+        left: var(--half-percentage);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .overlay-text h1 {
+        background: var(--text-color-gt);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: var(--size-large);
+        font-weight: var(--font-wt-bold);
+        letter-spacing: var(--size-small);
+    }
+
+    .overlay-text h2 {
+        background: var(--text-color-gt-3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.3rem;
+        font-weight: 400;
+        opacity: 0.9;
+    }
+
+    .overlay-text p {
+        font-size: var(--size-medium);
+        background: var(--text-color-gt-2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .cta-button {
+        font-weight: var(--font-wt-bold);
+        font-size: var(--size-medium);
+        background: var(--btn-bg-gt);
+        color: var(--white);
+        padding: 15px 28px;
+        display: inline-block;
+        border-radius: var(--global-radius);
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(81, 235, 255, 0.692);
+
+    }
+
+    /* section images  */
+    div.container {
+        display: flex;
+        gap: var(--size-small);
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #bg-image .box {
+        opacity: 1;
+    }
+
+}

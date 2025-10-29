@@ -9,7 +9,7 @@
     --topbar-gt: linear-gradient(rgb(0, 0, 0), rgb(36, 36, 36));
     --main-nav-gt: linear-gradient(rgb(36, 36, 36), rgb(0, 0, 0));
     --logo-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-    --bg-img-shadow:rgba(255, 0, 221, 0.4);
+    --bg-img-shadow: rgba(255, 0, 221, 0.4);
     --bg: black;
     --card-bg: #fcd0d0;
     --black-light: rgb(36, 36, 36);
@@ -27,7 +27,7 @@
     --primary-3: #dac760;
     --primary-1: #ab00b1;
     --hover-color: #ff007f;
-    --input-color:#5f0043;
+    --input-color: #5f0043;
     --white: white;
     /* colors  */
 
@@ -38,12 +38,13 @@
     /* font family */
 
     /* size  */
+     --large-radius: 18px;
     --global-radius: 12px;
     --small-radius: 6px;
     --medium-radius: 8px;
     --medium-plus-radius: 12px;
     --large-radius: 16px;
-    --size-xxlarge:4rem;
+    --size-xxlarge: 4rem;
     --size-xlarge: 2.5rem;
     --size-large: 2rem;
     --main-size: 1.5rem;
@@ -60,6 +61,7 @@
     --zero: 0;
     --percentage: 100%;
     --half-percentage: 50%;
+    --percentage-90: 90%;
     /* size  */
 
 }
