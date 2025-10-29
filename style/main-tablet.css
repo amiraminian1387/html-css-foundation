@@ -1,0 +1,53 @@
+@media screen and (max-width: 1024px) {
+.hover-message,
+  section#card-info,
+  section#slider,
+  .mobile-hero {
+    display: none;
+
+  }
+
+  .adverties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6% 5%;
+    text-align: center;
+  }
+
+  #text-container {
+    max-width: 600px;
+    margin-bottom: var(--size-xlarge);
+  }
+
+  #text-container h1 {
+    font-size: var(--size-large);
+    margin-bottom: var(--size-small);
+  }
+
+  #text-container h2 {
+    font-size: var(--size-medium);
+    margin-bottom: var(--size-small);
+    font-weight: var(--font-wt-light);
+  }
+
+  #text-container p {
+    font-size: var(--size-medium);
+    line-height: 1.6;
+  }
+
+  #video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  video {
+    max-width: 90vw;
+    border-radius: var(--global-radius);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  }
+
+
+  
