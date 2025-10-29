@@ -1,0 +1,122 @@
+footer {
+    position: relative;
+}
+
+.footer-gt {
+    color: var(--white);
+    font-family: var(--font-primary);
+    padding: var(--size-xxlarge) var(--zero);
+}
+
+.footer-title {
+    font-size: var(--main-size);
+    font-weight: var(--font-wt-bold);
+    background: var(--text-color-gt-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--size-medium);
+}
+
+.footer-text {
+    font-size: var(--small-font-sz);
+    color: var(--gray-4);
+    margin-bottom: 0.5rem;
+}
+
+.footer-list {
+    list-style: none;
+    padding: var(--zero);
+}
+
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: var(--gray-4);
+    font-size: var(--small-font-sz);
+    transition: 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: var(--hover-color);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    font-size: 1.2rem;
+    color: var(--gray-4);
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--primary-1);
+}
+
+.footer-form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.footer-form input {
+    padding: 0.5rem 1rem;
+    border-radius: var(--medium-radius);
+    border: none;
+    background-color: var(--gray-1);
+    color: var(--white);
+    font-size: var(--small-font-sz);
+    width: 250px;
+}
+
+.footer-form button {
+    background: var(--btn-bg-gt);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--medium-radius);
+    color: var(--white);
+    font-weight: var(--font-wt-bold);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.footer-form button:hover {
+    opacity: 0.9;
+}
+
+.footer-divider {
+    border-color: var(--gray-3);
+    margin: 2rem 0 1rem;
+}
+
+.footer-bottom {
+    font-size: var(--small-font-sz);
+    color: var(--gray-4);
+}
+
+.back-to-top {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--btn-bg-gt);
+    color: var(--white);
+    font-size: var(--size-large);
+    padding: var(--size-small) var(--size-medium);
+    border-radius: var(--global-radius);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background: var(--white);
+    color: var(--primary-1);
+    transform: translateX(-50%) translateY(-4px);
+}
