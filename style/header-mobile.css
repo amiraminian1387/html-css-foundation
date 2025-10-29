@@ -1,0 +1,42 @@
+@media screen and (max-width: 570px) {
+
+  nav.topbar,
+  nav.main-nav-tablet {
+    display: none;
+  }
+body{
+  overflow-x: hidden;
+}
+
+  nav.header-mobile {
+    color: var(--white);
+    background: var(--main-nav-gt);
+    margin: 0 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+  }
+
+  .header-mobile ul {
+    gap: var(--size-large);
+    margin: var(--zero);
+    padding: var(--zero);
+    display: flex;
+    list-style: none;
+    vertical-align: middle;
+  }
+
+
+  .header-mobile img {
+    height: 60px;
+    width: 60px;
+  }
+
+
+
+
+}

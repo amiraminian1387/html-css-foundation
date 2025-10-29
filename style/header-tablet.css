@@ -1,0 +1,58 @@
+@media screen and (max-width: 1024px) {
+
+    nav.main-nav {
+    display: none;
+}
+.topbar ul {
+    margin: var(--zero);
+    padding: var(--zero);
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-left: 3rem;    /* میخواستم لوگو و متن تاپ بار دقیقا زیر هم باشند*/
+}
+nav.main-nav-tablet{
+    color: var(--white);
+    background: var(--main-nav-gt);
+    margin: 0 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center ;
+    gap: 40px;
+    padding: 1% 0;
+    vertical-align: middle;
+   
+}
+.main-nav-tablet ul {
+    gap: var(--size-large);
+    margin: var(--zero);
+    padding: var(--zero);
+     display: flex;
+    list-style: none;
+}
+.main-nav-tablet ul li :nth-child(3)::after {
+  content: "|";
+  margin: 0 1rem;
+  color: var(--white);
+  opacity: 0.5;
+}
+ 
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+.main-nav-tablet a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.7s ease;
+}
+
+ul a:hover {
+    color: var(--hover-color);
+}
+
+
+}
