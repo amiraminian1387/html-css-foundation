@@ -1142,3 +1142,55 @@ section#iamges .right {
 
 }
 /* #CaseStudies  */
+
+/* SECTION FAG */
+#FAQ {
+   
+    font-family: var(--font-primary);
+    color: var(--gray-1);
+    padding: 4rem 2rem;
+}
+
+#FAQ h2 {
+    font-size: var(--main-size);
+    font-weight: var(--font-wt-bolder);
+    background: var(--text-color-gt-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: var(--size-large);
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-large);
+}
+
+.faq-item {
+    background: var(--white);
+    padding: var(--size-medium);
+    border-radius: var(--medium-radius);
+
+
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 12px var(--primary-2);
+    transition: box-shadow 0.5s ease;
+}
+
+.faq-question {
+    font-size: var(--size-medium);
+    font-weight: var(--font-wt-bold);
+    color: var(--primary-6);
+    margin-bottom: var(--size-small);
+}
+
+.faq-answer {
+    font-size: var(--size-medium);
+    color: var(--mid-gray-text);
+    line-height: var(--size-large);
+}
+ /* SECTION FAG  */
+/* end (: */
