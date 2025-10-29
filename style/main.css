@@ -188,3 +188,206 @@
 }
 
 /* SECTION GALLERY */
+
+/*SECTION CARDS INTRO*/
+section#cards-intro {
+    color: var(--white);
+    border-radius: var(--size-medium);
+    font-family: var(--font-primary);
+    align-items: stretch;
+    padding: 0 5%;
+
+}
+
+section#cards-intro ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section#cards-intro div#WebDesign,
+section#cards-intro div#SEO,
+section#cards-intro div#Marketing {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--size-medium);
+    border-radius: var(--size-medium);
+}
+
+section#cards-intro div#WebDesign {
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 var(--percentage));
+
+}
+
+section#cards-intro #WebDesign>h1 {
+    margin-top: var(--zero);
+    text-align: center;
+    font-weight: var(--font-wt-bolder);
+
+}
+
+section#cards-intro #WebDesign>p {
+    font-weight: var(--font-wt-light);
+    font-size: var(--font-xlarge);
+    line-height: var(--size-large);
+
+}
+
+section#cards-intro #WebDesign>ul li {
+
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-xlarge);
+    padding: 12px 0;
+
+}
+
+section#cards-intro div#SEO {
+    background: linear-gradient(43deg,
+            #4158d0 0%,
+            #1888b4 46%,
+            #0f31ca var(--percentage));
+}
+
+section#cards-intro #SEO>h1 {
+    margin-top: 0;
+    text-align: center;
+    font-weight: var(--font-wt-bolder);
+
+}
+
+section#cards-intro #SEO>p {
+    font-weight: var(--font-wt-light);
+    font-size: var(--font-xlarge);
+    line-height: var(--size-large);
+
+}
+
+section#cards-intro #SEO>ul li {
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-xlarge);
+    padding: 12px 0;
+
+}
+
+section#cards-intro div#Marketing {
+    background-color: var(--card-bg);
+
+}
+
+section#cards-intro div#Marketing h1 {
+    background: var(--text-color-gt-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--primary-2);
+    margin-top: 0;
+    text-align: center;
+
+}
+
+section#cards-intro div#Marketing p {
+    background: var(--text-color-gt-2);
+    color: var(--gray-1);
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-xlarge);
+    line-height: var(--size-large);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+section#cards-intro div#Marketing h2 {
+    font-weight: var(--font-wt-light);
+    line-height: var(--size-xlarge);
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+section#cards-intro .input {
+    background: var(--text-color-gt);
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+    width: var(--percentage);
+    padding: 15px 0 15px 15%;
+    border-radius: 15px;
+    color: var(--input-color);
+    transition: .9s ease;
+}
+
+section#cards-intro .input::placeholder {
+    color: var(--white);
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+}
+
+section#cards-intro .input:hover {
+    transition: .9s ease;
+    border-color: rgb(255, 0, 98);
+    box-shadow: 8px 9px 12px rgba(255, 0, 98, 0.7);
+}
+
+section#cards-intro #input-primary {
+    margin: 0 0 15px 0;
+    background: linear-gradient(43deg,
+            #4158d0 0%,
+            #1888b4 46%,
+            #0f31ca var(--percentage));
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+    color: var(--white);
+    width: var(--percentage);
+    padding: 15px 0 15px 15%;
+    border-radius: 15px;
+    transition: .9s ease;
+}
+
+section#cards-intro #input-primary::placeholder {
+    color: var(--primary-7);
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+}
+
+section#cards-intro #input-primary:hover {
+    transition: .9s ease;
+    border-color: var(--primary-7);
+    box-shadow: 8px 9px 12px var(--primary-7);
+}
+
+
+section#cards-intro #input-secendry {
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 var(--percentage));
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+    color: var(--white);
+    width: var(--percentage);
+    padding: 15px 0 15px 15%;
+    border-radius: 15px;
+    transition: .9s ease;
+}
+
+section#cards-intro #input-secendry::placeholder {
+    color: var(--primary-1);
+    font-weight: var(--font-wt-bolder);
+    font-size: var(--font-large);
+}
+
+section#cards-intro #input-secendry:hover {
+    transition: .9s ease;
+    border-color: var(--primary-1);
+    box-shadow: 8px 9px 12px var(--primary-1);
+}
+
+section#cards-intro div#Marketing button {
+    font-weight: var(--font-wt-lighter);
+    font-size: var(--font-xlarge);
+    color: var(--white);
+    width: var(--percentage);
+    text-align: center;
+    background: var(--btn-bg-gt);
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+/* SECTION CARDS INTRO */
