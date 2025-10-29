@@ -389,10 +389,45 @@ section#cards-intro div#Marketing button {
     padding: 15px 0;
     border-radius: 10px;
 }
-section#cards-intro i.webDesign{
-    color:var(--i-webdesign)
+
+section#cards-intro i.webDesign {
+    color: var(--i-webdesign)
 }
-section#cards-intro i.SEO{
-color: var( --i-color-seo);
+
+section#cards-intro i.SEO {
+    color: var(--i-color-seo);
 }
+
 /* SECTION CARDS INTRO */
+
+/* SECTION CERTIFICATION */
+section#Certifications {
+    font-family: var(--font-main) !important;
+}
+
+section#Certifications img {
+    filter: drop-shadow(0 0 5px rgba(124, 0, 173, 0.9));
+}
+
+section#Certifications h5 {
+    color: var(--primary-6);
+    font-weight: var(--font-wt-lighter) !important;
+
+}
+
+section#Certifications .hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+section#Certifications .hover-card:hover {
+    transform: translateY(-8px);
+}
+
+section#Certifications .card-body p {
+    padding-top: var(--size-small);
+    color: var(--primary-1);
+    font-weight: var(--font-wt-bolder) !important;
+}
+
+/*  SECTION CERTIFICATION  */
