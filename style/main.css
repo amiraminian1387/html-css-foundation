@@ -1076,5 +1076,69 @@ section#iamges .right {
     background: var(--hover-bg-gt);
 }
 
-
 /* SECTION TESTIMONIALS FORM */
+
+/* #CaseStudies  */
+#CaseStudies {
+    font-family: var(--font-primary);
+    color: var(--primary-4);
+    padding: 4rem 2rem;
+
+}
+
+.case-link {
+    text-decoration: none;
+    color: var(--primary-4);
+    transition: transform 0.7s ease;
+    height: var(--percentage);
+}
+
+.case-link:hover {
+    transition: .7s;
+    transform: translateY(-4px);
+    box-shadow: 0 2px 12px var(--primary-7);
+}
+
+.case-card {
+    display: flex;
+    flex-direction: column;
+    height: var(--percentage);
+    margin: var(--zero);
+    border-radius: var(--global-radius);
+    background: var(--white);
+    box-shadow: 0 0px 8px var(--primary-7);
+    transition: box-shadow 0.7s ease;
+}
+
+.case-card img {
+    border-radius: var(--global-radius);
+    width: var(--percentage);
+    height: auto;
+}
+
+.case-card figcaption {
+    padding: var(--size-medium);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-card h3 {
+    font-size: var(--size-medium);
+    font-weight: var(--font-wt-bold);
+    background: var(--text-color-gt-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: var(--size-small);
+}
+
+.case-card p {
+    font-size: var(--size-medium);
+    background: var(--text-color-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: var(--size-large);
+
+}
+/* #CaseStudies  */
