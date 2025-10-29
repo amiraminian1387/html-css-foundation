@@ -578,3 +578,60 @@ section#iamges .right {
 }
 
 /*SECTION OFFERS*/
+
+/*SECTION EMPLOYER CARD  */
+#sectionCard {
+    display: flex;
+    gap: 64px;
+    overflow-x: auto;
+    /* چون اسکرول وسط صفحه ظاهر زشتی داشت اینارو خودم سرچ کردم یاد گرفتم */
+    scrollbar-width: none;
+    /* برای Firefox */
+    -ms-overflow-style: none;
+    /* برای IE و Edge  */
+
+}
+
+#sectionCard .card {
+    transition: all 0.3s ease;
+}
+
+#sectionCard .card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+#sectionCard .card img {
+    transition: transform 0.4s ease;
+}
+
+#sectionCard .card:hover img {
+    transform: scale(1.08);
+}
+
+#sectionCard figure img {
+    width: 261px;
+    height: 272px;
+
+
+}
+
+#sectionCard figcaption {
+    font-weight: 100;
+    font-size: 10px;
+}
+
+#sectionCard figcaption>span {
+    padding-left: 10px;
+    font-size: large;
+}
+
+#sectionCard .discount {
+    display: inline;
+    text-decoration: line-through;
+    color: dimgray;
+    max-width: fit-content;
+}
+
+/* SECTION EMPLOYER CARD  */
