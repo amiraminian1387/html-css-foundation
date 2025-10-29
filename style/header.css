@@ -1,0 +1,106 @@
+nav.header-mobile,
+.main-nav-tablet {
+    display: none;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    z-index: 999;
+}
+nav.topbar {
+    font-family: var(--font-secendry);
+    letter-spacing: var(--size-small);
+    color: var(--mid-gray-text);
+    font-weight: var(--font-wt-light);
+    font-size: var(--font-large);
+    background: var(--topbar-gt);
+    padding: 1rem 0;
+
+}
+
+.topbar ul {
+    margin: var(--zero);
+    padding: var(--zero);
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.topbar li a {
+    text-decoration: none;
+    transition: color 0.9s ease;
+}
+
+.topbar li a:hover {
+    color: var(--hover-color);
+}
+
+nav.main-nav {
+    color: var(--white);
+    background: var(--main-nav-gt);
+    margin: 0 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    padding: 1% 0;
+    vertical-align: middle;
+
+}
+
+.main-nav ul {
+    gap: var(--size-large);
+    margin: var(--zero);
+    padding: var(--zero);
+    display: flex;
+    list-style: none;
+}
+
+.main-nav ul li :nth-child(3)::after {
+    content: "|";
+    margin: 0 1rem;
+    color: var(--white);
+    opacity: 0.5;
+}
+
+
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.7s ease;
+}
+
+ul a:hover {
+    color: var(--hover-color);
+}
+
+.consult-btn {
+    background: var(--btn-bg-gt);
+    color: var(--white);
+    font-weight: var(--font-wt-lighter);
+    font-family: var(--font-primary);
+    padding: 0.9rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: background-color 0.8s ease;
+}
+
+.consult-btn:hover {
+    background: var(--hover-bg-gt);
+    color: var(--black-light);
+}
+
+span#space {
+    display: flex;
+    flex-direction: column;
+}

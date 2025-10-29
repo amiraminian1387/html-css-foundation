@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img,
+button {
+    cursor: pointer;
+}
+
+body {
+    margin: var(--zero);
+    padding: var(--zero);
+    background: var(--bg ) !important;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar {
+    display: none;
+}
