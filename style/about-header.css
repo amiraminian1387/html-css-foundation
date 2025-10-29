@@ -1,0 +1,19 @@
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span,
+.navbar-nav .nav-link {
+    color: var(--white);
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hover-color);
+}
+
+header {
+    box-shadow: var(--hover-color) 0px 0px 12px;
+}

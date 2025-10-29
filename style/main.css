@@ -772,16 +772,14 @@ section#iamges .right {
     );
     top: 0;
     left: -15%;
-    animation: skeleton 2.5s infinite ease-in-out;
+    animation: skeleton 2.5s infinite linear;
 }
 
 @keyframes skeleton {
     0% {
         left: -15%;
     }
-    50% {
-        left: 60%;
-    }
+
     100% {
         left: 115%;
     }

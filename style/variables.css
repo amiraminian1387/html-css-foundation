@@ -64,8 +64,11 @@
     --font-size-large: 18px;
     --zero: 0;
     --percentage: 100%;
+    --percentage-40: 40%;
     --half-percentage: 50%;
     --percentage-90: 90%;
+    --percentage-80: 80%;
+    --percentage-70: 70%;
     /* size  */
 
 }
