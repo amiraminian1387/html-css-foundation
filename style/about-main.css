@@ -6,16 +6,23 @@ div#about h1 {
     position: absolute;
     left: 100px;
     top: 100px;
-    font-weight:var(--font-wt-lighter);
+    font-weight: var(--font-wt-lighter);
     font-size: var(--size-xlarge);
     background: var(--text-color-gt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 /* --------------------------------------------------------- */
 
-section#about-us{
+section#about-us {
     max-width: var(--percentage-40);
+    font-family: var(--font-txt-about);
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin: 4% auto;
+    letter-spacing: var(--size-xsmall);
+    padding: var(--size-medium) var(--size-small);
+    color: rgba(145, 91, 196, 0.5);
 }
