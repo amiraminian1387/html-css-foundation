@@ -1,0 +1,63 @@
+@media screen and (max-width: 570px) {
+
+    div#about h1 {
+        text-align: center;
+    }
+
+    section#about-us {
+        max-width: 95%;
+        margin: 5% auto;
+        padding: 1.5rem 1rem;
+        background: var(--card-dark-bg);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        line-height: var(size-large);
+        text-align: left;
+        font-size: var(size-medium);
+        letter-spacing: var(size-xsmall);
+        animation: fadeIn 0.8s ease;
+        box-shadow: 0 4px 20px var(--bg-img-shadow);
+    }
+
+    section#about-us p {
+        margin-bottom: 1.2rem;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: slideUp 3s ease forwards;
+    }
+
+    section#about-us p:nth-child(2) {
+        animation-delay: 0.2s;
+        color: var(--primary-1);
+    }
+
+    section#about-us p:nth-child(3) {
+        animation-delay: 0.4s;
+        color: var(--primary-6);
+    }
+
+    section#about-us p:nth-child(4) {
+        animation-delay: 0.6s;
+        color: var(--input-color);
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.98);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes slideUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+}
