@@ -1,21 +1,20 @@
 body {
-    background: var(--text-color-gt);
-    margin: var(--zero);
+    color: #000;
     overflow-x: hidden;
-
-
+    height: 100%;
+    background-image: linear-gradient(to right, #D500F9, #FFD54F);
+    background-repeat: no-repeat;
 }
-
 
 /* START HEADER  */
 
 .custom-header {
-    background: var( --bg);
+    background: var(--bg);
     box-shadow: 0 5px 20px var(--hover-color);
     position: sticky;
     top: var(--zero);
     z-index: 1000;
-    opacity:.6;
+    opacity: .6;
 }
 
 .logo-text {
@@ -27,7 +26,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: transform 0.9s ease;
-    
+
 }
 
 .logo-text:hover {
@@ -65,3 +64,200 @@ body {
 }
 
 /* END HEADER  */
+
+/* ---------- GLOBAL FORMS ---------- */
+input,
+textarea {
+    background-color: var(--card-bg);
+    border-radius: var(--large-radius);
+    padding: 12px 15px;
+    width: var(--percentage);
+    box-sizing: border-box;
+    border: 1px solid var(--card-bg);
+    font-size: var(--font-size-large);
+    color: var(--black-light);
+    font-weight: var(--font-wt-light);
+    font-family: var(--font-form);
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: none;
+    border: 1px solid var(--primary-1);
+    outline: none;
+    font-weight: var(--font-wt-light);
+}
+
+button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    border-radius: var(--zero);
+    border: none;
+}
+
+.card1 {
+    width: var(--half-percentage);
+    padding: 40px 30px 10px 30px;
+}
+
+.card2 {
+    width: var(--half-percentage);
+    background-image: var(--btn-bg-gt);
+}
+
+/* ---------- LOGO ---------- */
+#logo {
+    width: 70px;
+    height: 60px;
+}
+
+/* ---------- TEXT ---------- */
+.heading {
+    margin-bottom: 60px;
+}
+
+::placeholder {
+    color: var(--black-light);
+    opacity: 1;
+}
+
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+    color: var(--black-light);
+}
+
+.form-control-label {
+    font-size: var(--small-font-sz);
+    margin-left: 15px;
+}
+
+.msg-info {
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-color {
+    border-radius: var(--large-radius);
+    color: var(--white);
+    background-image: var(--btn-bg-gt);
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    margin-top: 40px;
+    transition: 0.4s;
+}
+
+.btn-color:hover {
+    background-image: var(--hover-bg-gt);
+}
+
+.btn-white {
+    border-radius: var(--large-radius);
+    color: var(--primary-1);
+    background-color: var(--white);
+    padding: 8px 40px;
+    cursor: pointer;
+    border: 2px solid var(--primary-1);
+    transition: 0.4s;
+}
+
+.btn-white:hover {
+    color: var(--white);
+    background-image: var(--btn-bg-gt);
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: var(--black-light);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+/* ---------- BOTTOM ---------- */
+.bottom {
+    width: var(--percentage);
+    margin-top: 50px;
+}
+
+.sm-text {
+    font-size: var(--small-font-sz);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 992px) {
+    .card1,
+    .card2 {
+        width: var(--percentage);
+        padding: 40px 30px 10px 30px;
+    }
+
+    .right {
+        margin: 100px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card2 {
+        padding: 50px;
+    }
+
+    .right {
+        margin: 50px 0;
+    }
+}
+
+/* END MAIN  */
+
+/* START FOOTER  */
+.custom-footer {
+    background: var(--topbar-gt);
+    border-top: 1px solid var(--gray-3);
+    box-shadow: 0 -4px 10px var(--gray-2);
+    color: var(--gray-4);
+    font-family: var(--font-primary);
+    font-size: var(--small-font-sz);
+    position: relative;
+    z-index: 999;
+    opacity: .8;
+}
+
+.footer-text {
+    margin: 0;
+    font-weight: var(--font-wt-light);
+    letter-spacing: 0.5px;
+    transition: color 0.8s ease;
+}
+
+.footer-text:hover {
+    color: var(--primary-7);
+}
+
+.social-icons {
+    display: flex;
+    gap: var(--size-medium);
+}
+
+.icon-link {
+    color: var(--gray-4);
+    font-size: var(--size-large);
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+
+.icon-link:hover {
+    color: var(--primary-1);
+    transform: scale(1.2) rotate(-5deg);
+}
+
+/* END FOOOTER  */
