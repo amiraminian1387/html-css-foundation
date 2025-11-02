@@ -31,6 +31,7 @@ section#about-us {
     letter-spacing: var(size-xsmall);
     animation: fadeIn 0.8s ease;
     box-shadow: 0 4px 20px var(--bg-img-shadow);
+
 }
 
 section#about-us p {
@@ -90,7 +91,7 @@ section#about-us p:nth-child(4) {
 }
 
 .team-card {
-  
+
     background: var(--box-color-gt);
     border-radius: var(--medium-radius);
     overflow: hidden;

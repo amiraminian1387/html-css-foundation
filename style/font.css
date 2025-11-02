@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'P22 Michelangelo';
+    src: url('P22MichelangeloRegular.woff2') format('woff2'),
+        url('P22MichelangeloRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
