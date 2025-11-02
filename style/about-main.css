@@ -13,36 +13,39 @@ div#about h1 {
     background: var(--text-color-gt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 /* <!-- ABOUT US TEXT SECTION  --> */
 section#about-us {
-    max-width: 95%;
+    max-width: var(--percentage-90);
     margin: 5% auto;
-    margin-bottom: 0;
+    margin-bottom: var(--zero);
     padding: 1.5rem 1rem;
     max-width: var(--half-percentage);
     background: var(--card-dark-bg);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 12px;
+    border-radius: var(--global-radius);
     line-height: var(size-large);
     text-align: left;
     font-size: var(size-medium);
+    font-weight: var(--font-wt-bolder);
     letter-spacing: var(size-xsmall);
     animation: fadeIn 0.8s ease;
     box-shadow: 0 4px 20px var(--bg-img-shadow);
-
+    font-family: var(--font-txt-about);
+    font-style: var(--font-style-italic);
 }
 
 section#about-us p {
-    margin-bottom: 1.2rem;
+    margin-bottom: var(--size-medium);
     opacity: 0;
     transform: translateY(10px);
-    animation: slideUp 3s ease forwards;
+    animation: slideUp 5s ease forwards;
 }
 
 section#about-us p:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
     color: var(--primary-1);
 }
 
@@ -99,40 +102,38 @@ section#about-us p:nth-child(4) {
     transition: all 0.4s ease;
     box-shadow: 0 10px 30px rgba(255, 0, 157, 0.2);
     transform: translateY(20px);
-    opacity: 0;
+    opacity: var(--zero);
     animation: fadeUp 1s ease forwards;
 }
 
 .team-card:hover {
-    box-shadow: 0 5px 25px rgba(255, 0, 234, 0.301);
+    box-shadow:var(--bg-img-shadow);
 
 }
 
 .team-img {
-    width: 100%;
+    width: var(--percentage);
     height: 320px;
     object-fit: cover;
-    filter: grayscale(40%);
     transition: filter 0.4s ease;
 }
 
 .team-info {
-    padding: 20px;
+    padding: var(--size-medium);
 }
 
 .team-info h3 {
     font-size: var(--size-large);
-    margin-bottom: 5px;
+    margin-bottom: var(--size-small);
 }
 
 .team-info p {
     color: var(--gray-4);
     font-size: var(--size-medium);
-    margin-bottom: 10px;
+    margin-bottom:var(--size-small);
 }
 
 .team-info span {
-    font-style: italic;
     font-weight: var(--font-wt-light);
     color: var(--primary-4);
 }
@@ -150,7 +151,7 @@ section#about-us p:nth-child(4) {
 }
 
 .team-card:nth-child(1) {
-    animation-delay: 0.2s;
+    animation-delay: 0.3s;
 }
 
 .team-card:nth-child(2) {
