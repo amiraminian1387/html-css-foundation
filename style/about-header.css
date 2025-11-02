@@ -1,3 +1,11 @@
+header {
+    font-weight: var(--font-wt-lighter);
+    font-size: var(--size-medium);
+    font-family: var(--main-font-face-about);
+    letter-spacing: var(--size-xsmall);
+
+}
+
 .navbar .container-fluid {
     display: flex;
     align-items: center;

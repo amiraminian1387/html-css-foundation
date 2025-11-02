@@ -13,6 +13,8 @@ div#about h1 {
     background: var(--text-color-gt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--main-font-face-about);
+    letter-spacing: var(--size-small);
 
 }
 
@@ -89,12 +91,13 @@ section#about-us p:nth-child(4) {
 
 #about-team h2 {
     font-weight: var(--font-wt-bolder);
-    letter-spacing: 1px;
+    letter-spacing: var(--size-small);
     color: var(--primary-4);
+    font-family: var(--main-font-face-about);
 }
 
 .team-card {
-
+    font-family: var(--main-font-face-about);
     background: var(--box-color-gt);
     border-radius: var(--medium-radius);
     overflow: hidden;
@@ -107,7 +110,7 @@ section#about-us p:nth-child(4) {
 }
 
 .team-card:hover {
-    box-shadow:var(--bg-img-shadow);
+    box-shadow: var(--bg-img-shadow);
 
 }
 
@@ -130,7 +133,7 @@ section#about-us p:nth-child(4) {
 .team-info p {
     color: var(--gray-4);
     font-size: var(--size-medium);
-    margin-bottom:var(--size-small);
+    margin-bottom: var(--size-small);
 }
 
 .team-info span {
