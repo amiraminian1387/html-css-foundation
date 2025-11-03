@@ -10,6 +10,7 @@
     --main-nav-gt: linear-gradient(rgb(36, 36, 36), rgb(0, 0, 0));
     --logo-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
     --bg-img-shadow: rgba(255, 0, 221, 0.4);
+    --bg-color-contact: rgba(255, 0, 64, 0.1);
     --bg: black;
     --card-bg: #fcd0d0;
     --card-dark-bg: #fcd0d0bd;
@@ -69,6 +70,8 @@
     --font-size-large: 18px;
     --zero: 0;
     --percentage: 100%;
+    --percentage-7: 7%;
+    --percentage-10: 10%;
     --percentage-40: 40%;
     --half-percentage: 50%;
     --percentage-90: 90%;

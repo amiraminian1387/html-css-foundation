@@ -1,0 +1,45 @@
+header {
+    background-image: url(../images/logo.png);
+    background-position: 510px 50px;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-size: contain;
+    color: var(--white);
+    filter: drop-shadow(0 0 20px rgb(124, 0, 173));
+    background-color: var(--bg-color-contact);
+
+}
+
+nav#nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--font-secendry);
+
+}
+
+nav#nav-links img {
+    width: 60px;
+    height: 60px;
+
+}
+
+nav#nav-links ul {
+    margin: var(--zero);
+    padding: var(--zero);
+    display: flex;
+    list-style: none;
+    gap: var(--size-large);
+
+}
+
+nav#center-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: var(--percentage-7);
+    opacity: .7;
+    background: var(--hover-bg-gt);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

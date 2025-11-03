@@ -5,7 +5,7 @@
 a {
     color: inherit;
     display: inline-block;
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
 }
 
