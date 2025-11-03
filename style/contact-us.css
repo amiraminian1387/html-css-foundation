@@ -1,45 +1,113 @@
 header {
-    background-image: url(../images/logo.png);
-    background-position: 510px 50px;
-    background-repeat: no-repeat;
-    height: 350px;
-    background-size: contain;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
     color: var(--white);
-    filter: drop-shadow(0 0 20px rgb(124, 0, 173));
-    background-color: var(--bg-color-contact);
+    font-family: var(--main-font-face-contact) !important;
 
+}
+
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: var(--percentage);
+    min-height: var(--percentage);
+    object-fit: cover;
+    z-index: 0;
+    filter: drop-shadow(0 0 20px rgb(124, 0, 173));
+}
+
+nav#nav-links,
+nav#center-nav {
+    position: relative;
+    z-index: 1;
 }
 
 nav#nav-links {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: var(--font-secendry);
+    letter-spacing: var(--size-small);
+    padding: var(--size-medium);
+    margin: var(--zero);
+    background-color: rgba(0, 0, 0, 0.04);
 
 }
 
-nav#nav-links img {
-    width: 60px;
-    height: 60px;
+nav#nav-links h1 {
+    font-size: var(--size-medium);
+    font-weight: var(--font-wt-lighter);
 
 }
 
 nav#nav-links ul {
     margin: var(--zero);
-    padding: var(--zero);
     display: flex;
     list-style: none;
     gap: var(--size-large);
-
 }
+
+nav#nav-links ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--font-wt-light);
+    transition: color 0.3s ease;
+}
+
+nav#nav-links ul li a:hover {
+    color: var(--hover-color);
+}
+
+nav#nav-links button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: var(--size-medium) var(--size-large);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav#nav-links button:hover {
+    background-color: var(--hover-color);
+}
+
 
 nav#center-nav {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    padding: var(--percentage-7);
-    opacity: .7;
+    align-items: center;
+    height: 100%;
+
+    opacity: 0.9;
     background: var(--hover-bg-gt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+nav#center-nav h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    nav#nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav#nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav#center-nav h1 {
+        font-size: 32px;
+        text-align: center;
+    }
 }
