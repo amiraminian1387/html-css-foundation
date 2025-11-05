@@ -39,6 +39,9 @@ nav#nav-links {
 nav#nav-links h1 {
     font-size: var(--size-medium);
     font-weight: var(--font-wt-lighter);
+    background: var(--text-color-gt-3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 }
 
@@ -99,15 +102,34 @@ nav#center-nav h1 {
     nav#nav-links {
         flex-direction: column;
         gap: 10px;
+        font-size: var(--size-medium);
+        font-weight: var(--font-wt-bolder);
+
+    }
+
+    nav#nav-links h1 {
+        margin-bottom: var(--size-medium);
+        font-weight: var(--font-wt-bolder);
+        font-style: var(--font-style-italic);
+        background: var(--text-color-gt-3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     nav#nav-links ul {
         flex-direction: column;
         align-items: center;
+        padding: var(--zero);
     }
 
     nav#center-nav h1 {
         font-size: 32px;
         text-align: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    nav#center-nav {
+        height: 50vh;
     }
 }
