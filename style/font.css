@@ -23,4 +23,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Vellumo';
+    src: url('VellumoDemo-Regular.woff2') format('woff2'),
+        url('VellumoDemo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 

@@ -1,13 +1,12 @@
 body {
-    color: #000;
+    color: var(--bg);
     overflow-x: hidden;
-    height: 100%;
+    height: var(--percentage);
     background:var(--bg-sub-pages);
-    background-repeat: no-repeat;
+    
 }
 
 /* START HEADER  */
-
 .custom-header {
     background: var(--bg);
     box-shadow: 0 5px 20px var(--hover-color);
@@ -39,7 +38,7 @@ body {
     font-family: var(--font-main);
     font-size: var(--font-size-large);
     font-weight: var(--font-wt-bold);
-    margin-left: 1rem;
+    margin-left: var(--size-medium);
     position: relative;
     transition: color 0.3s ease;
 }
@@ -47,8 +46,8 @@ body {
 .nav-link::after {
     content: '';
     position: absolute;
-    width: 0%;
-    height: 2px;
+    width: var(--zero);
+    height: var(--size-small);
     bottom: -4px;
     left: 0;
     background: var(--hover-bg-gt);
@@ -60,7 +59,7 @@ body {
 }
 
 .nav-link:hover::after {
-    width: 100%;
+    width: var(--percentage);
 }
 
 /* END HEADER  */
@@ -70,9 +69,8 @@ input,
 textarea {
     background-color: var(--card-bg);
     border-radius: var(--large-radius);
-    padding: 12px 15px;
+    padding: var(--size-medium);
     width: var(--percentage);
-    box-sizing: border-box;
     border: 1px solid var(--card-bg);
     font-size: var(--font-size-large);
     color: var(--black-light);
@@ -97,6 +95,8 @@ button:focus {
 .card {
     border-radius: var(--zero);
     border: none;
+    font-family: var( --font-face-log-in-card) !important;
+    
 }
 
 .card1 {
@@ -107,12 +107,14 @@ button:focus {
 .card2 {
     width: var(--half-percentage);
     background-image: var(--btn-bg-gt);
+    
 }
 
 /* ---------- LOGO ---------- */
 #logo {
-    width: 70px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 10px 10px var( --primary-6));
 }
 
 /* ---------- TEXT ---------- */
@@ -132,12 +134,13 @@ button:focus {
 
 .form-control-label {
     font-size: var(--small-font-sz);
-    margin-left: 15px;
+    margin-left: var(--size-medium);
 }
 
 .msg-info {
     padding-left: 15px;
     margin-bottom: 30px;
+    
 }
 
 /* ---------- BUTTONS ---------- */
@@ -234,9 +237,9 @@ a:hover {
 }
 
 .footer-text {
-    margin: 0;
+    margin: var(--zero);
     font-weight: var(--font-wt-light);
-    letter-spacing: 0.5px;
+    letter-spacing: var(--size-xsmall);
     transition: color 0.8s ease;
 }
 
