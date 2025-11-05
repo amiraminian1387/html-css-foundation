@@ -5,6 +5,7 @@
     --text-color-gt: linear-gradient(90deg, #ff007f, #7f00ff);
     --text-color-gt-2: linear-gradient(to right, #00c6ff, #ab00b1 50%);
     --text-color-gt-3: linear-gradient(to left, #ff007b 60%, #ff6a00);
+    --bg-sub-pages: linear-gradient(to right, #D500F9, #FFD54F);
     --box-color-gt: linear-gradient(120deg, rgba(122, 0, 67, 0.411), rgb(95, 0, 52, 0.411));
     --topbar-gt: linear-gradient(rgb(0, 0, 0), rgb(36, 36, 36));
     --main-nav-gt: linear-gradient(rgb(36, 36, 36), rgb(0, 0, 0));

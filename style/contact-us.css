@@ -1,3 +1,13 @@
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: var(--percentage);
+    min-height: var(--percentage);
+    object-fit: cover;
+    z-index: -1;
+    filter: drop-shadow(0 0 20px rgb(124, 0, 173));
+}
 header {
     position: relative;
     height: 100vh;
@@ -8,16 +18,7 @@ header {
 }
 
 
-#bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: var(--percentage);
-    min-height: var(--percentage);
-    object-fit: cover;
-    z-index: 0;
-    filter: drop-shadow(0 0 20px rgb(124, 0, 173));
-}
+
 
 nav#nav-links,
 nav#center-nav {
@@ -98,6 +99,107 @@ nav#center-nav h1 {
     margin: 0;
 }
 
+/* end header  */
+
+/* start section contact-section */
+/* بخش کلی تماس */
+#contact-section {
+
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.left-contact {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.left-contact h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.left-contact h2 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.left-contact p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.right-contact {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.right-contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-contact input,
+.right-contact textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.right-contact input:focus,
+.right-contact textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+.right-contact button {
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-contact button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+/* mobile view port  */
 @media (max-width: 768px) {
     nav#nav-links {
         flex-direction: column;
@@ -131,5 +233,9 @@ nav#center-nav h1 {
 
     nav#center-nav {
         height: 50vh;
+    }
+
+    .contact-container {
+        flex-direction: column;
     }
 }
