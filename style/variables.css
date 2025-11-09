@@ -26,6 +26,7 @@
     --primary-6: #8f2df0;
     --primary-4: #3c99cf;
     --primary-7: #00ccff;
+    --primary-8:#34495e;
     --primary-2: #ff934f;
     --primary-3: #dac760;
     --primary-1: #ab00b1;
@@ -72,6 +73,8 @@
     --font-xlarge: x-large;
     --font-size-large: 18px;
     --zero: 0;
+    --full-vw: 100vw;
+    --full-vh: 100vh;
     --percentage: 100%;
     --percentage-7: 7%;
     --percentage-10: 10%;
