@@ -556,6 +556,8 @@ section#iamges .right {
     border-radius: var(--global-radius);
     text-align: center;
     transition: 0.9s ease;
+    font-family: var(--font-txt-about);
+    font-style: var( --font-style-italic);
 
 }
 
@@ -576,6 +578,29 @@ section#iamges .right {
     line-height: var(--size-large);
     max-width: 800px;
 
+}
+.do-scroll {
+  display:block;
+  font-size: var(--size-medium);
+  font-weight: var(--font-wt-bolder);
+  color: var(--primary-7); 
+  animation: scrollPulse 1.5s ease-in-out infinite;
+}
+
+
+@keyframes scrollPulse {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*SECTION OFFERS*/
