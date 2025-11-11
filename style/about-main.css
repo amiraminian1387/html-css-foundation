@@ -171,4 +171,8 @@ section#core-values {
     background: var(--text-color-gt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: var(--main-font-face-about);
+    font-weight: var(--font-wt-bolder);
+    letter-spacing: var(--size-xsmall);
+    font-size: var(--size-medium);
 }
