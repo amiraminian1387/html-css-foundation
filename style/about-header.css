@@ -18,6 +18,10 @@ span,
 
 }
 
+span span.not-set {
+    color: var(--gray-4);
+}
+
 .navbar-nav .nav-link:hover {
     color: var(--hover-color);
 }
