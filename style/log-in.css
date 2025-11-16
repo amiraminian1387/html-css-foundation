@@ -2,8 +2,8 @@ body {
     color: var(--bg);
     overflow-x: hidden;
     height: var(--percentage);
-    background:var(--bg-sub-pages);
-    
+    background: var(--bg-sub-pages);
+
 }
 
 /* START HEADER  */
@@ -95,8 +95,8 @@ button:focus {
 .card {
     border-radius: var(--zero);
     border: none;
-    font-family: var( --font-face-log-in-card) !important;
-    
+    font-family: var(--font-face-log-in-card) !important;
+
 }
 
 .card1 {
@@ -107,14 +107,14 @@ button:focus {
 .card2 {
     width: var(--half-percentage);
     background-image: var(--btn-bg-gt);
-    
+
 }
 
 /* ---------- LOGO ---------- */
 #logo {
     width: 80px;
     height: 80px;
-    filter: drop-shadow(0 10px 10px var( --primary-6));
+    filter: drop-shadow(0 10px 10px var(--primary-6));
 }
 
 /* ---------- TEXT ---------- */
@@ -140,7 +140,7 @@ button:focus {
 .msg-info {
     padding-left: 15px;
     margin-bottom: 30px;
-    
+
 }
 
 /* ---------- BUTTONS ---------- */
@@ -196,6 +196,7 @@ a:hover {
 
 /* ---------- RESPONSIVE ---------- */
 @media screen and (max-width: 992px) {
+
     .card1,
     .card2 {
         width: var(--percentage);
@@ -223,3 +224,4 @@ a:hover {
 
 /* END MAIN  */
 
+/* LOG IN CSS IS DONE  */
